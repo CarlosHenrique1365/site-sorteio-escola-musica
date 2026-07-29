@@ -1,0 +1,102 @@
+.stage {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: radial-gradient(120% 90% at 50% 0%, #221a14 0%, var(--color-bg) 55%, #0a0908 100%);
+}
+
+/* Textura sutil de madeira nas laterais do palco */
+.woodPanel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 22vw;
+  min-width: 160px;
+  opacity: 0.55;
+  background: repeating-linear-gradient(
+    180deg,
+    rgba(67, 50, 37, 0.55) 0px,
+    rgba(42, 32, 25, 0.45) 3px,
+    rgba(67, 50, 37, 0.55) 7px
+  );
+  mask-image: linear-gradient(90deg, black, transparent);
+}
+.woodPanel.left {
+  left: 0;
+}
+.woodPanel.right {
+  right: 0;
+  transform: scaleX(-1);
+}
+
+/* Spotlights suaves vindos do teto */
+.spotlight {
+  position: absolute;
+  top: -20%;
+  width: 46vw;
+  height: 140%;
+  background: radial-gradient(ellipse at top, rgba(214, 160, 74, 0.16), transparent 65%);
+  filter: blur(6px);
+}
+.spotlightLeft {
+  left: -6vw;
+  transform: rotate(6deg);
+}
+.spotlightRight {
+  right: -6vw;
+  transform: rotate(-6deg);
+}
+
+/* Silhuetas de instrumentos, discretas, fora do centro de leitura */
+.silhouette {
+  position: absolute;
+  opacity: 0.16;
+  color: var(--color-gold);
+  pointer-events: none;
+}
+.piano {
+  bottom: -4%;
+  left: -4%;
+  width: min(30vw, 340px);
+}
+.guitar {
+  bottom: 6%;
+  right: -2%;
+  width: min(16vw, 200px);
+  transform: rotate(8deg);
+}
+.mic {
+  top: 8%;
+  right: 8%;
+  width: 56px;
+  opacity: 0.22;
+}
+
+/* Partículas douradas flutuantes */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--color-gold);
+  filter: blur(0.5px);
+  opacity: 0.55;
+}
+
+/* Ondas sonoras douradas discretas cruzando o palco */
+.soundWave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(214, 160, 74, 0.35), transparent);
+}
+
+@media (max-width: 720px) {
+  .woodPanel {
+    width: 12vw;
+  }
+  .piano,
+  .guitar {
+    opacity: 0.1;
+  }
+}

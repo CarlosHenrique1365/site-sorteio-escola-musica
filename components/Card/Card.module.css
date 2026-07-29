@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+/* Listras douradas no topo, referência a teclas de piano (usado no Cadastro) */
+.pianoStripes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  display: flex;
+}
+.pianoStripes span {
+  flex: 1;
+  border-right: 1px solid var(--color-bg);
+}
+.pianoStripes span:nth-child(odd) {
+  background: var(--color-text);
+}
+.pianoStripes span:nth-child(even) {
+  background: var(--color-gold);
+}
+
+.highlight {
+  border-color: rgba(214, 160, 74, 0.4);
+  box-shadow: var(--shadow-soft), 0 0 0 1px rgba(214, 160, 74, 0.15) inset;
+}

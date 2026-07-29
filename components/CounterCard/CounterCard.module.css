@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.icon {
+  color: var(--color-gold);
+  margin-bottom: 0.25rem;
+}
+
+.value {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: var(--fs-xl);
+  color: var(--color-text);
+}
+
+.label {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+}

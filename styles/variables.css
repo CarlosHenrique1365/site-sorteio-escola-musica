@@ -1,0 +1,54 @@
+/* ============================================================
+   DESIGN TOKENS — Identidade visual "Escola de Música"
+   Inspiração: palco de concerto, madeira, luz de spot, dourado.
+   ============================================================ */
+:root {
+  /* Cores base */
+  --color-bg: #12100e;
+  --color-panel: #1e1815;
+  --color-card: #2a2019;
+  --color-border: #433225;
+  --color-text: #f7f1e8;
+  --color-text-secondary: #cfc4b6;
+  --color-gold: #d6a04a;
+  --color-gold-hover: #e9b65b;
+  --color-accent: #b86a3b;
+  --color-error: #c94d4d;
+  --color-success: #4fa86c;
+
+  /* Camadas translúcidas (glass) */
+  --glass-bg: rgba(42, 32, 25, 0.55);
+  --glass-border: rgba(214, 160, 74, 0.18);
+  --shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --shadow-gold-glow: 0 0 24px rgba(214, 160, 74, 0.35);
+
+  /* Tipografia */
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Space Grotesk", "Helvetica Neue", sans-serif;
+
+  /* Escala */
+  --fs-hero: clamp(2.4rem, 5vw + 1rem, 4.2rem);
+  --fs-xl: clamp(1.6rem, 2.2vw + 1rem, 2.4rem);
+  --fs-lg: 1.25rem;
+  --fs-md: 1rem;
+  --fs-sm: 0.875rem;
+  --fs-xs: 0.75rem;
+
+  /* Espaçamento */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3.5rem;
+
+  /* Raio e bordas */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  /* Transições */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 180ms;
+  --dur-mid: 320ms;
+  --dur-slow: 620ms;
+}

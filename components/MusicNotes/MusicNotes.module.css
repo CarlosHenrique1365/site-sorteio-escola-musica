@@ -1,0 +1,15 @@
+.container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  overflow: hidden;
+}
+
+.note {
+  position: absolute;
+  top: -10%;
+  color: var(--color-gold);
+  font-size: 1.6rem;
+  will-change: transform, opacity;
+}
